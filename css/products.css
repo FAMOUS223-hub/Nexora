@@ -1,0 +1,131 @@
+/* ============================================
+   Products Page
+   ============================================ */
+
+/* --- Product detail grid --- */
+
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--duration-slow) var(--ease),
+              box-shadow var(--duration-slow) var(--ease);
+}
+
+.product-detail:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.product-detail > img {
+  width: 100%;
+  height: 26rem;
+  object-fit: cover;
+}
+
+.product-detail-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 2.8rem;
+}
+
+.product-detail-body h3 {
+  margin-bottom: 0.8rem;
+  font-size: 2.6rem;
+  letter-spacing: -0.04em;
+}
+
+.product-detail-body p {
+  color: var(--ink-muted);
+  font-size: 1.5rem;
+}
+
+.product-detail-body .text-button {
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+/* Stagger animation */
+.product-detail:nth-child(2) { transition-delay: 0.1s; }
+.product-detail:nth-child(3) { transition-delay: 0.2s; }
+.product-detail:nth-child(4) { transition-delay: 0.3s; }
+
+/* --- Product suite --- */
+
+.product-suite {
+  width: min(var(--max-width), 100%);
+  margin: 0 auto var(--space-3xl);
+  padding-right: clamp(2rem, 5vw, 6rem);
+  padding-left: clamp(2rem, 5vw, 6rem);
+  padding-top: var(--space-3xl);
+}
+
+.product-suite .section-header p {
+  max-width: 58rem;
+  color: var(--ink-muted);
+}
+
+/* --- Product principles --- */
+
+.product-principles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  width: min(var(--max-width), 100%);
+  margin: 0 auto var(--space-3xl);
+  box-sizing: border-box;
+  padding: 5rem clamp(2rem, 5vw, 6rem);
+  background: var(--navy);
+  color: #fff;
+}
+
+.product-principles h2 {
+  max-width: 58rem;
+  margin-bottom: 1rem;
+  font-size: clamp(2.8rem, 4vw, 4.4rem);
+  letter-spacing: -0.05em;
+}
+
+.product-principles p {
+  max-width: 58rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 64rem) {
+  .product-detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 48rem) {
+  .product-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-principles {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .data-table {
+    font-size: 1.2rem;
+  }
+
+  .table-row > * {
+    padding: 1rem 0.6rem;
+  }
+}

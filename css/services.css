@@ -1,0 +1,121 @@
+/* ============================================
+   Services Page
+   ============================================ */
+
+/* --- Service detail grid --- */
+
+.service-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service-detail-grid .card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.service-detail-grid .card-image {
+  flex: 0 0 22rem;
+}
+
+.service-detail-grid .card:nth-child(4) {
+  grid-column: 1 / 2;
+}
+
+.service-detail-grid .card h3 {
+  font-size: 2.2rem;
+}
+
+/* --- Outcomes --- */
+
+.outcomes {
+  margin-bottom: var(--space-3xl);
+}
+
+.outcome-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.outcome-card {
+  padding: 3rem;
+  background: var(--surface);
+  border-left: 0.4rem solid var(--brand);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--duration-slow) var(--ease),
+              box-shadow var(--duration-slow) var(--ease);
+}
+
+.outcome-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.outcome-card strong {
+  color: var(--brand);
+  font-size: 1.2rem;
+}
+
+.outcome-card h3 {
+  margin: 1.6rem 0 0.8rem;
+  font-size: 2.2rem;
+}
+
+.outcome-card p {
+  color: var(--ink-muted);
+  font-size: 1.45rem;
+}
+
+/* --- FAQ --- */
+
+.services-faq {
+  margin-bottom: var(--space-3xl);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+}
+
+.services-faq .section-header {
+  max-width: 62rem;
+}
+
+.services-faq .section-header h2 {
+  font-size: clamp(3rem, 5vw, 5.6rem);
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 64rem) {
+  .service-detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-detail-grid .card:nth-child(4) {
+    grid-column: auto;
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .outcome-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 48rem) {
+  .service-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,33 @@
+/* ============================================
+   Contact Page
+   ============================================ */
+
+/* --- Contact layout --- */
+
+.contact-section .contact-grid {
+  margin-bottom: var(--space-3xl);
+}
+
+.contact-grid > *,
+.location-panel > * {
+  min-width: 0;
+}
+
+.contact-info,
+.form {
+  width: 100%;
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 64rem) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 48rem) {
+  .contact-details {
+    grid-template-columns: 1fr;
+  }
+}

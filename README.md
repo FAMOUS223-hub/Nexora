@@ -1,46 +1,59 @@
-# Nexora Landing Page
+# Nexora Technologies
 
-A simple modern landing page for a technology company, built with semantic HTML and custom CSS.
+Nexora is a responsive five-page technology company website built with semantic HTML, CSS, and vanilla JavaScript. It presents the company, its services, software products, and contact details in one consistent experience.
+
+## Pages
+
+- `index.html` - Home page with the hero, company benefits, services, products, and call to action.
+- `about.html` - Company story, mission, vision, and values.
+- `services.html` - Service capabilities and the delivery process.
+- `products.html` - Nexora POS, CRM, Cloud, and Learn product showcase.
+- `contact.html` - Contact information and validated enquiry form.
 
 ## Project Structure
 
-- `index.html` – page structure and content
-- `css/style.css` – custom styling and layout
-- `js/script.js` – mobile navigation toggle
-- `img/` – project images
+```text
+Nexora/
+├── index.html
+├── about.html
+├── services.html
+├── products.html
+├── contact.html
+├── css/
+│   ├── style.css
+│   ├── base.css
+│   ├── about.css
+│   ├── services.css
+│   ├── products.css
+│   └── contact.css
+├── js/
+│   └── script.js
+├── img/
+└── README.md
+```
 
-## Design Notes
+Each page has a dedicated stylesheet: `style.css` for Home, `about.css` for About, `services.css` for Services, `products.css` for Products, and `contact.css` for Contact. The inner pages also load `base.css` for shared navigation, typography, controls, and footer primitives. Images are kept in `img/` and referenced with relative paths so the site works without a build step.
 
-- Clean business-tech aesthetic with warm orange accents
-- Semantic sectioning for navigation, hero, feature cards, services, products, and footer
-- Responsive layout for desktop and mobile screens
-- Sticky navigation and mobile menu behavior
-- Card-based UI for features and product highlights
+## Features
 
-## Main Sections
-
-1. Header / Navigation
-2. Hero Banner
-3. Why Choose Us
-4. Services
-5. Our Products
-6. Footer
+- Responsive layouts for desktop, tablet, and mobile screens.
+- Sticky navigation with an accessible mobile menu button.
+- Semantic landmarks including `nav`, `header`, `main`, `section`, `article`, `form`, and `footer`.
+- Keyboard-friendly links, buttons, labels, and current-page navigation states.
+- Product cards, service cards, contact details, and reusable calls to action.
+- Product filtering and accessible product detail modal.
+- Contact form validation and success feedback.
+- Dynamic copyright year handled by `js/script.js`.
 
 ## Run Locally
 
-Open the project in a browser, or serve it locally with:
+From the project directory, start a small local web server:
 
 ```bash
-cd /Users/macpro/Desktop/techX
+cd /Users/macpro/Desktop/Nexora
 python3 -m http.server 8000
 ```
 
-Then visit:
+Open [http://localhost:8000](http://localhost:8000) in a browser.
 
-```text
-http://localhost:8000/
-```
-
-## Notes
-
-The page is intentionally built with semantic HTML so it is easier to maintain, accessible, and extension-friendly.
+Because this is a static site, no package installation or build process is required.

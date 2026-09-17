@@ -1,0 +1,62 @@
+/* ============================================
+   Design Tokens
+   ============================================ */
+
+:root {
+  /* Brand */
+  --brand: #f5a623;
+  --brand-hover: #e09515;
+  --brand-light: rgba(245, 166, 35, 0.1);
+
+  /* Neutrals */
+  --ink: #1a1a1a;
+  --ink-soft: #4a4a4a;
+  --ink-muted: #777;
+  --surface: #ffffff;
+  --surface-warm: #faf8f5;
+  --bg: #f5f3f0;
+  --bg-alt: #eeeae5;
+
+  /* Accent */
+  --navy: #0f2b3c;
+  --navy-light: rgba(15, 43, 60, 0.05);
+
+  /* Borders & Lines */
+  --line: rgba(0, 0, 0, 0.08);
+  --line-strong: rgba(0, 0, 0, 0.14);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.12);
+
+  /* Typography */
+  --font: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", monospace;
+
+  /* Spacing scale */
+  --space-xs: 0.4rem;
+  --space-sm: 0.8rem;
+  --space-md: 1.6rem;
+  --space-lg: 2.4rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 8rem;
+
+  /* Radius */
+  --radius-sm: 0.4rem;
+  --radius: 0.8rem;
+  --radius-md: 1.2rem;
+  --radius-lg: 1.6rem;
+  --radius-pill: 99rem;
+
+  /* Transitions */
+  --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --duration: 0.25s;
+  --duration-slow: 0.4s;
+
+  /* Layout */
+  --max-width: 120rem;
+  --nav-height: 7rem;
+}

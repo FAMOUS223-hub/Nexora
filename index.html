@@ -8,205 +8,271 @@
       content="Nexora delivers innovative digital solutions, software products, and technology services for modern businesses."
     />
     <title>Nexora | Digital Solutions</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="#top" class="brand" aria-label="Nexora home">Nexora</a>
 
-      <ul class="nav-list" role="list">
-        <li class="hideOnMobile"><a href="#top">Home</a></li>
-        <li class="hideOnMobile"><a href="#about">About</a></li>
-        <li class="hideOnMobile"><a href="#services">Services</a></li>
-        <li class="hideOnMobile"><a href="#products">Products</a></li>
-        <li class="hideOnMobile"><a href="#contact">Contact</a></li>
-        <li class="menu-trigger">
-          <button type="button" class="hamburger" aria-label="Open menu" aria-expanded="false">
-            <img src="img/menu-line.svg" alt="" aria-hidden="true" />
-          </button>
-        </li>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body class="home-page">
+
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-brand" aria-label="Nexora home">Nexora</a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
     </nav>
 
-    <ul class="mobileVide" id="mobile-menu" aria-label="Mobile navigation" role="list">
-      <li class="mobileView"><a href="#top">Home</a></li>
-      <li class="mobileView"><a href="#about">About</a></li>
-      <li class="mobileView"><a href="#services">Services</a></li>
-      <li class="mobileView"><a href="#products">Products</a></li>
-      <li class="mobileView"><a href="#contact">Contact</a></li>
+    <!-- Mobile Menu -->
+    <ul class="mobile-menu" id="mobile-menu" role="list">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
 
+    <!-- Hero -->
     <header class="hero" id="top">
-      <div class="heroContent">
-        <h1><span>Innovating Today</span>, Powering Tomorrow</h1>
-        <p class="lead">
-          Nexora provides innovative digital solutions, software products, and technology
-          services designed to help businesses grow, operate efficiently, and compete in a
-          digital world.
-        </p>
-
-        <div class="btn" aria-label="Main actions">
-          <a href="#services" class="btn-primary">Explore Services</a>
-          <a href="#products" class="btn-secondary">View Products</a>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1><span>Innovating Today.</span> Powering Tomorrow.</h1>
+          <p class="lead">
+            Nexora Technologies provides innovative digital solutions, software
+            products, and technology services designed to help businesses grow,
+            operate efficiently, and compete in a digital world.
+          </p>
+          <div class="btn-group">
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+            <a href="#products" class="btn btn-secondary">View Products</a>
+          </div>
         </div>
+
+        <figure class="hero-visual">
+          <img
+            src="img/CDEA3EA3-4849-45B7-9C8C-28B80431A334.PNG"
+            alt="Nexora technology workspace"
+          />
+          <figcaption>Build better. Move faster.</figcaption>
+        </figure>
       </div>
     </header>
 
+    <!-- Hero Strip -->
+    <div class="hero-strip" aria-label="Nexora approach">
+      <span>Strategy</span>
+      <span>Design</span>
+      <span>Engineering</span>
+      <span>Scale</span>
+    </div>
+
+    <!-- Main Content -->
     <main id="main-content">
-      <section class="why" id="about" aria-labelledby="why-choose-us-title">
-        <div class="choose">
-          <h2 id="why-choose-us-title">Why Choose Us</h2>
-          <div class="cards" id="services">
-            <article class="card1">
-              <h3 class="head">Performance</h3>
-              <p class="details">
-                Fast, reliable, and scalable solutions that keep your operations moving.
-              </p>
-              <a href="#" class="moreInfo">Learn More</a>
-            </article>
 
-            <article class="card1">
-              <h3 class="head">Innovation</h3>
-              <p class="details">
-                Built around modern thinking, emerging tools, and better customer experiences.
-              </p>
-              <a href="#" class="moreInfo">Learn More</a>
-            </article>
+      <!-- Why Choose Us -->
+      <section class="section why" id="about" aria-labelledby="why-title">
+        <div class="section-header section-header--center">
+          <h2 id="why-title">Technology with a reason to exist.</h2>
+          <p>We turn complex business challenges into clear, dependable digital experiences.</p>
+        </div>
 
-            <article class="card1">
-              <h3 class="head">Security</h3>
-              <p class="details">
-                Trusted systems and secure processes designed to protect your business data.
-              </p>
-              <a href="#" class="moreInfo">Learn More</a>
-            </article>
+        <div class="grid-4">
+          <article class="card-numbered">
+            <span class="card-number">01</span>
+            <h3>Innovation</h3>
+            <p>We develop modern technology solutions that solve real-world problems.</p>
+          </article>
 
-            <article class="card1">
-              <h3 class="head">Customer Support</h3>
-              <p class="details">
-                Dedicated guidance from strategy to implementation and long-term growth.
-              </p>
-              <a href="#" class="moreInfo">Learn More</a>
-            </article>
-          </div>
+          <article class="card-numbered">
+            <span class="card-number">02</span>
+            <h3>Security</h3>
+            <p>We prioritize the protection and privacy of our clients' data.</p>
+          </article>
+
+          <article class="card-numbered">
+            <span class="card-number">03</span>
+            <h3>Performance</h3>
+            <p>Our solutions are fast, reliable, and ready to scale with your business.</p>
+          </article>
+
+          <article class="card-numbered">
+            <span class="card-number">04</span>
+            <h3>Customer Support</h3>
+            <p>We work closely with clients to ensure their technology needs are met.</p>
+          </article>
         </div>
       </section>
 
-      <section class="services-section" id="services" aria-labelledby="services-title">
-        <header class="services-header">
-          <p class="section-tag">Capabilities</p>
+      <!-- Services -->
+      <section class="section home-services" id="services" aria-labelledby="services-title">
+        <div class="section-header">
           <h2 id="services-title">Our Services</h2>
-        </header>
+        </div>
 
-        <div class="services-grid">
+        <div class="service-grid">
           <article class="service-card">
-            <figure class="service-visual">
-              <img src="img/mobileApp.JPG" alt="Mobile app development for modern businesses" />
+            <figure class="service-card-image">
+              <img src="img/mobileApp.JPG" alt="Mobile app development" />
             </figure>
-            <div class="service-body">
-              <p class="service-kicker">Mobile</p>
+            <div class="service-card-body">
+              <p class="kicker">Mobile</p>
               <h3>Mobile App Development</h3>
-              <p>
-                High-performance mobile experiences designed to delight users and grow your digital footprint.
-              </p>
-              <a href="#" class="service-link">Learn More</a>
+              <p>High-performance mobile experiences designed to delight users and grow your digital footprint.</p>
+              <a href="#" class="text-link">Learn More</a>
             </div>
           </article>
 
-          <article class="service-card service-card-alt">
-            <figure class="service-visual">
+          <article class="service-card">
+            <figure class="service-card-image">
               <img src="img/webDev.JPG" alt="Custom web development" />
             </figure>
-            <div class="service-body">
-              <p class="service-kicker">Web</p>
+            <div class="service-card-body">
+              <p class="kicker">Web</p>
               <h3>Web Development</h3>
-              <p>
-                Modern, responsive websites and portals built for speed, usability, and conversion.
-              </p>
-              <a href="#" class="service-link">Learn More</a>
+              <p>Modern, responsive websites and portals built for speed, usability, and conversion.</p>
+              <a href="#" class="text-link">Learn More</a>
             </div>
           </article>
 
           <article class="service-card">
-            <figure class="service-visual">
-              <img src="img/UX.JPG" alt="UI and UX design services" />
+            <figure class="service-card-image">
+              <img src="img/UX.JPG" alt="UI and UX design" />
             </figure>
-            <div class="service-body">
-              <p class="service-kicker">Design</p>
+            <div class="service-card-body">
+              <p class="kicker">Design</p>
               <h3>UI/UX Design</h3>
-              <p>
-                Thoughtful interfaces and user journeys that simplify interaction and strengthen brand trust.
-              </p>
-              <a href="#" class="service-link">Learn More</a>
+              <p>Thoughtful interfaces and user journeys that simplify interaction and strengthen brand trust.</p>
+              <a href="#" class="text-link">Learn More</a>
             </div>
           </article>
 
-          <article class="service-card service-card-alt">
-            <figure class="service-visual">
-              <img src="img/cloudSecurity.JPG" alt="Cloud and security solutions" />
+          <article class="service-card">
+            <figure class="service-card-image">
+              <img src="img/cloudSecurity.JPG" alt="Cloud solutions" />
             </figure>
-            <div class="service-body">
-              <p class="service-kicker">Cloud</p>
+            <div class="service-card-body">
+              <p class="kicker">Cloud</p>
               <h3>Cloud Solutions</h3>
-              <p>
-                Secure, scalable cloud infrastructure that supports growth, resilience, and operational efficiency.
-              </p>
-              <a href="#" class="service-link">Learn More</a>
+              <p>Secure, scalable cloud infrastructure that supports growth, resilience, and operational efficiency.</p>
+              <a href="#" class="text-link">Learn More</a>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="products-section" id="products" aria-labelledby="our-products-title">
-        <div class="section-header">
-          <h2 id="our-products-title">Our Products</h2>
+      <!-- Products -->
+      <section class="section home-products" id="products" aria-labelledby="products-title">
+        <div class="section-header section-header--center">
+          <h2 id="products-title">Our Products</h2>
         </div>
 
-        <div class="products">
-          <article class="rate">
-            <figure class="productImg">
-              <img src="img/POS.JPG" alt="Nexora POS software interface" />
+        <div class="product-grid">
+          <article class="product-card">
+            <figure class="product-card-image">
+              <img src="img/POS.JPG" alt="Nexora POS system" />
             </figure>
-            <div class="rateInfo">
-              <h3 class="productTitle">Nexora POS</h3>
-              <p class="desc">A modern point-of-sale system for businesses.</p>
+            <div class="product-card-body">
+              <h3>Nexora POS</h3>
+              <p>A modern point-of-sale system for businesses.</p>
             </div>
           </article>
 
-          <article class="rate">
-            <figure class="productImg">
+          <article class="product-card">
+            <figure class="product-card-image">
               <img src="img/CRM.JPG" alt="Nexora CRM dashboard" />
             </figure>
-            <div class="rateInfo">
-              <h3 class="productTitle">Nexora CRM</h3>
-              <p class="desc">Customer relationships built around smarter workflows.</p>
+            <div class="product-card-body">
+              <h3>Nexora CRM</h3>
+              <p>Customer relationships built around smarter workflows.</p>
             </div>
           </article>
 
-          <article class="rate">
-            <figure class="productImg">
-              <img src="img/cloud.JPG" alt="Nexora Cloud platform illustration" />
+          <article class="product-card">
+            <figure class="product-card-image">
+              <img src="img/cloud.JPG" alt="Nexora Cloud platform" />
             </figure>
-            <div class="rateInfo">
-              <h3 class="productTitle">Nexora Cloud</h3>
-              <p class="desc">Flexible cloud infrastructure for secure, scalable growth.</p>
+            <div class="product-card-body">
+              <h3>Nexora Cloud</h3>
+              <p>Flexible cloud infrastructure for secure, scalable growth.</p>
             </div>
           </article>
         </div>
       </section>
+
+      <!-- CTA -->
+      <section class="section home-cta" aria-labelledby="home-cta-title">
+        <div class="cta-banner">
+          <h2 id="home-cta-title">Ready to transform your business with technology?</h2>
+          <a href="mailto:hello@nexora.com" class="btn btn-primary">
+            Get Started <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
     </main>
 
-    <footer class="site-footer" id="contact">
+    <!-- Footer -->
+    <footer class="footer" id="contact">
       <div class="footer-inner">
-        <div>
-          <p class="section-tag footer-tag">Nexora</p>
-          <h3>Let's build what's next.</h3>
-          <p class="copyRight"> &copy; <span class="copy"></span></p>
-       </div>
-        <a href="mailto:hello@nexora.com" class="footer-link">hello@nexora.com</a>
+        <div class="footer-grid">
+          <div class="footer-intro">
+            <p class="footer-brand">Nexora Technologies</p>
+            <h3>Let's build what's next.</h3>
+            <p>Digital products and technology services for businesses ready to move with purpose.</p>
+            <a href="mailto:hello@nexora.com" class="footer-link">hello@nexora.com <span aria-hidden="true">↗</span></a>
+          </div>
+          <nav class="footer-column" aria-label="Footer navigation">
+            <h4>Explore</h4>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="footer-column">
+            <h4>Capabilities</h4>
+            <a href="services.html">Web development</a>
+            <a href="services.html">Mobile applications</a>
+            <a href="services.html">UI/UX design</a>
+            <a href="services.html">Cloud solutions</a>
+            <a href="services.html">Cybersecurity</a>
+          </div>
+          <address class="footer-column footer-address">
+            <h4>Start a conversation</h4>
+            <p>Accra, Ghana</p>
+            <a href="tel:+233000000000">+233 XX XXX XXXX</a>
+            <a href="mailto:hello@nexora.com">hello@nexora.com</a>
+            <p>Monday - Friday<br />8:00 AM - 5:00 PM</p>
+          </address>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">&copy; <span class="copyright-year"></span> Nexora Technologies</p>
+          <p class="footer-note">Innovating today. Powering tomorrow.</p>
+        </div>
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

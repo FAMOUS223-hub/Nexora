@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore Nexora software products for sales, customer relationships, cloud storage, and learning." />
+    <title>Products | Nexora Technologies</title>
+
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/products.css" />
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-brand" aria-label="Nexora home">Nexora</a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html" aria-current="page">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <ul class="mobile-menu" id="mobile-menu" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="products.html" aria-current="page">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Page Hero -->
+    <header class="page-hero" id="top">
+      <div>
+        <h1>Our technology products.</h1>
+        <p>
+          Focused software products designed to simplify operations, strengthen
+          relationships, and improve productivity.
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+
+      <!-- Products Section -->
+      <section class="section" aria-labelledby="products-section-title">
+        <div class="section-header section-header--center">
+          <h2 id="products-section-title">Useful by design. Ready to grow.</h2>
+          <div class="filter-row" role="group" aria-label="Filter products">
+            <button class="filter-btn is-active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="business">Business</button>
+            <button class="filter-btn" data-filter="cloud">Cloud</button>
+            <button class="filter-btn" data-filter="education">Education</button>
+          </div>
+        </div>
+
+        <div class="product-detail-grid">
+          <article class="product-detail" data-category="business">
+            <img src="img/POS.JPG" alt="Nexora POS interface" />
+            <div class="product-detail-body">
+              <p class="kicker">Business software</p>
+              <h3>Nexora POS</h3>
+              <p>Manage sales, inventory, customers, reports, and user accounts from one dependable point-of-sale system.</p>
+              <button class="text-button product-open" data-product="pos" type="button">
+                View product <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="product-detail" data-category="business">
+            <img src="img/CRM.JPG" alt="Nexora CRM dashboard" />
+            <div class="product-detail-body">
+              <p class="kicker">Business software</p>
+              <h3>Nexora CRM</h3>
+              <p>Organize customer information, sales activity, communication, and analytics in one shared workspace.</p>
+              <button class="text-button product-open" data-product="crm" type="button">
+                View product <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="product-detail" data-category="cloud">
+            <img src="img/cloud.JPG" alt="Nexora Cloud platform" />
+            <div class="product-detail-body">
+              <p class="kicker">Cloud services</p>
+              <h3>Nexora Cloud</h3>
+              <p>Store, share, and manage business files securely from wherever work takes you.</p>
+              <button class="text-button product-open" data-product="cloud" type="button">
+                View product <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="product-detail" data-category="education">
+            <img src="img/IMG_2274.JPG" alt="Online learning platform" />
+            <div class="product-detail-body">
+              <p class="kicker">Education technology</p>
+              <h3>Nexora Learn</h3>
+              <p>Connect students with courses, video lessons, quizzes, and meaningful progress tracking.</p>
+              <button class="text-button product-open" data-product="learn" type="button">
+                View product <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="page-cta" aria-labelledby="products-cta-title">
+        <h2 id="products-cta-title">Find the right tool for your next chapter.</h2>
+        <a class="btn btn-primary" href="contact.html">
+          Contact us <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+
+    </main>
+
+    <!-- Product Suite -->
+    <section class="product-suite" aria-labelledby="suite-title">
+      <div class="section-header section-header--center">
+        <h2 id="suite-title">One connected suite. Four focused tools.</h2>
+        <p>Start with the product that solves today's problem, then expand when your operation is ready.</p>
+      </div>
+
+      <div class="data-table" role="table" aria-label="Nexora product capabilities">
+        <div class="table-row table-head" role="row">
+          <strong role="columnheader">Capability</strong>
+          <strong role="columnheader">POS</strong>
+          <strong role="columnheader">CRM</strong>
+          <strong role="columnheader">Cloud</strong>
+          <strong role="columnheader">Learn</strong>
+        </div>
+        <div class="table-row" role="row">
+          <span role="cell">Daily operations</span>
+          <span role="cell">✓</span>
+          <span role="cell">✓</span>
+          <span role="cell">✓</span>
+          <span role="cell">✓</span>
+        </div>
+        <div class="table-row" role="row">
+          <span role="cell">Reports and insight</span>
+          <span role="cell">✓</span>
+          <span role="cell">✓</span>
+          <span role="cell">✓</span>
+          <span role="cell">✓</span>
+        </div>
+        <div class="table-row" role="row">
+          <span role="cell">Team access</span>
+          <span role="cell">✓</span>
+          <span role="cell">✓</span>
+          <span role="cell">✓</span>
+          <span role="cell">✓</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Principles -->
+    <section class="product-principles" aria-labelledby="principles-title">
+      <div>
+        <h2 id="principles-title">Software that respects the people using it.</h2>
+        <p>Every Nexora product is designed around clarity, dependable performance, and a shorter path between a question and a useful answer.</p>
+      </div>
+      <a class="btn btn-primary" href="contact.html">
+        Plan your setup <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+
+    <!-- Product Modal -->
+    <dialog class="modal" id="product-modal">
+      <button class="modal-close" type="button" aria-label="Close product details">&times;</button>
+      <h2 id="modal-title">Product details</h2>
+      <p id="modal-copy"></p>
+      <a class="btn btn-primary" href="contact.html">Ask about this product</a>
+    </dialog>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-intro">
+            <p class="footer-brand">Nexora Technologies</p>
+            <h3>Let's build what's next.</h3>
+            <p>Digital products and technology services for businesses ready to move with purpose.</p>
+            <a href="mailto:hello@nexora.com" class="footer-link">hello@nexora.com <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <nav class="footer-column" aria-label="Footer navigation">
+            <h4>Explore</h4>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Products</a><a href="contact.html">Contact</a>
+          </nav>
+          <div class="footer-column">
+            <h4>Capabilities</h4>
+            <a href="services.html">Web development</a>
+            <a href="services.html">Mobile applications</a>
+            <a href="services.html">UI/UX design</a>
+            <a href="services.html">Cloud solutions</a>
+            <a href="services.html">Cybersecurity</a>
+          </div>
+          <address class="footer-column footer-address">
+            <h4>Start a conversation</h4>
+            <p>Accra, Ghana</p>
+            <a href="tel:+233000000000">+233 XX XXX XXXX</a>
+            <a href="mailto:hello@nexora.com">hello@nexora.com</a>
+            <p>Monday - Friday<br />8:00 AM - 5:00 PM</p>
+          </address>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copy">&copy; <span class="copyright-year"></span> Nexora Technologies</p>
+          <p class="footer-note">Innovating today. Powering tomorrow.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+  </body>
+</html>
