@@ -167,6 +167,66 @@
   line-height: 1.6;
 }
 
+/* Page-specific hero directions */
+
+.page-hero--about {
+  min-height: 50rem;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(15, 43, 60, 0.94), rgba(15, 43, 60, 0.35)),
+    url("../img/IMG_2263.JPG") 58% center / cover no-repeat;
+}
+
+.page-hero--about > div {
+  max-width: 72rem;
+  padding-left: clamp(1rem, 3vw, 4rem);
+  border-left: 0.5rem solid var(--brand);
+}
+
+.page-hero--services {
+  min-height: 42rem;
+  align-items: flex-end;
+  background:
+    linear-gradient(135deg, rgba(15, 43, 60, 0.9), rgba(15, 43, 60, 0.28)),
+    url("../img/webDev.JPG") center 42% / cover no-repeat;
+}
+
+.page-hero--services h1 {
+  max-width: 68rem;
+  font-size: clamp(3.6rem, 5.6vw, 6.4rem);
+}
+
+.page-hero--products {
+  min-height: 46rem;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  background:
+    linear-gradient(270deg, rgba(15, 43, 60, 0.94), rgba(15, 43, 60, 0.3)),
+    url("../img/cloud.JPG") center / cover no-repeat;
+}
+
+.page-hero--products > div {
+  max-width: 68rem;
+}
+
+.page-hero--products p {
+  margin-left: auto;
+}
+
+.page-hero--contact {
+  min-height: 38rem;
+  align-items: flex-end;
+  background:
+    linear-gradient(180deg, rgba(15, 43, 60, 0.25), rgba(15, 43, 60, 0.94)),
+    url("../img/IMG_2280.JPG") center / cover no-repeat;
+}
+
+.page-hero--contact h1 {
+  max-width: 62rem;
+  color: var(--brand);
+}
+
 /* --- Main Content --- */
 
 .main {

@@ -13,6 +13,13 @@
   min-width: 0;
 }
 
+.location-map {
+  width: 100%;
+  min-height: 32rem;
+  border: 0;
+  box-shadow: var(--shadow-md);
+}
+
 .contact-info,
 .form {
   width: 100%;

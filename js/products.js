@@ -24,10 +24,13 @@
 
       document.querySelectorAll(".filter-btn").forEach(function (b) {
         b.classList.toggle("is-active", b === btn);
+        b.setAttribute("aria-pressed", String(b === btn));
       });
 
       document.querySelectorAll(".product-detail").forEach(function (card) {
-        card.classList.toggle("is-hidden", filter !== "all" && card.dataset.category !== filter);
+        var isHidden = filter !== "all" && card.dataset.category !== filter;
+        card.classList.toggle("is-hidden", isHidden);
+        card.hidden = isHidden;
       });
     });
   });
