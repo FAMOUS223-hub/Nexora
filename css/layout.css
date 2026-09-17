@@ -91,10 +91,9 @@
   background: rgba(245, 166, 35, 0.18);
 }
 
-.nav-toggle svg {
-  width: 2.4rem;
-  height: 2.4rem;
-  stroke: var(--ink);
+.nav-toggle .fa-bars {
+  font-size: 2.2rem;
+  color: var(--ink);
 }
 
 /* Mobile menu */

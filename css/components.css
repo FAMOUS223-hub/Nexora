@@ -63,12 +63,11 @@
   transition: color var(--duration) var(--ease);
 }
 
-.text-link::after {
-  content: "→";
+.text-link .fa-arrow-right {
   transition: transform var(--duration) var(--ease);
 }
 
-.text-link:hover::after {
+.text-link:hover .fa-arrow-right {
   transform: translateX(4px);
 }
 
@@ -419,9 +418,10 @@
   border: 1px solid var(--line-strong);
   border-radius: 50%;
   color: var(--brand-hover);
-  content: "+";
-  font-size: 2rem;
-  font-weight: 400;
+  content: "\2b";
+  font-family: "Font Awesome 6 Free";
+  font-size: 1.4rem;
+  font-weight: 900;
   line-height: 1;
   transition: transform var(--duration) var(--ease), background var(--duration) var(--ease), color var(--duration) var(--ease);
 }
@@ -440,7 +440,7 @@
   background: var(--brand);
   border-color: var(--brand);
   color: var(--ink);
-  content: "−";
+  content: "\f068";
   transform: rotate(180deg);
 }
 

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   </head>
   <body>
 
@@ -33,11 +34,7 @@
         aria-label="Open menu"
         aria-expanded="false"
       >
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="3" y1="6" x2="21" y2="6" />
-          <line x1="3" y1="12" x2="21" y2="12" />
-          <line x1="3" y1="18" x2="21" y2="18" />
-        </svg>
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
       </button>
     </nav>
 
@@ -84,7 +81,7 @@
               <h3>Nexora POS</h3>
               <p>Manage sales, inventory, customers, reports, and user accounts from one dependable point-of-sale system.</p>
               <button class="text-button product-open" data-product="pos" type="button">
-                View product <span aria-hidden="true">↗</span>
+                View product <span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span>
               </button>
             </div>
           </article>
@@ -96,7 +93,7 @@
               <h3>Nexora CRM</h3>
               <p>Organize customer information, sales activity, communication, and analytics in one shared workspace.</p>
               <button class="text-button product-open" data-product="crm" type="button">
-                View product <span aria-hidden="true">↗</span>
+                View product <span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span>
               </button>
             </div>
           </article>
@@ -108,7 +105,7 @@
               <h3>Nexora Cloud</h3>
               <p>Store, share, and manage business files securely from wherever work takes you.</p>
               <button class="text-button product-open" data-product="cloud" type="button">
-                View product <span aria-hidden="true">↗</span>
+                View product <span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span>
               </button>
             </div>
           </article>
@@ -120,7 +117,7 @@
               <h3>Nexora Learn</h3>
               <p>Connect students with courses, video lessons, quizzes, and meaningful progress tracking.</p>
               <button class="text-button product-open" data-product="learn" type="button">
-                View product <span aria-hidden="true">↗</span>
+                View product <span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span>
               </button>
             </div>
           </article>
@@ -131,7 +128,7 @@
       <section class="page-cta" aria-labelledby="products-cta-title">
         <h2 id="products-cta-title">Find the right tool for your next chapter.</h2>
         <a class="btn btn-primary" href="contact.html">
-          Contact us <span aria-hidden="true">↗</span>
+          Contact us <span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span>
         </a>
       </section>
 
@@ -154,24 +151,24 @@
         </div>
         <div class="table-row" role="row">
           <span role="cell">Daily operations</span>
-          <span role="cell">✓</span>
-          <span role="cell">✓</span>
-          <span role="cell">✓</span>
-          <span role="cell">✓</span>
+          <span role="cell"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+          <span role="cell"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+          <span role="cell"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+          <span role="cell"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
         </div>
         <div class="table-row" role="row">
           <span role="cell">Reports and insight</span>
-          <span role="cell">✓</span>
-          <span role="cell">✓</span>
-          <span role="cell">✓</span>
-          <span role="cell">✓</span>
+          <span role="cell"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+          <span role="cell"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+          <span role="cell"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+          <span role="cell"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
         </div>
         <div class="table-row" role="row">
           <span role="cell">Team access</span>
-          <span role="cell">✓</span>
-          <span role="cell">✓</span>
-          <span role="cell">✓</span>
-          <span role="cell">✓</span>
+          <span role="cell"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+          <span role="cell"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+          <span role="cell"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+          <span role="cell"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
         </div>
       </div>
     </section>
@@ -183,13 +180,13 @@
         <p>Every Nexora product is designed around clarity, dependable performance, and a shorter path between a question and a useful answer.</p>
       </div>
       <a class="btn btn-primary" href="contact.html">
-        Plan your setup <span aria-hidden="true">↗</span>
+        Plan your setup <span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span>
       </a>
     </section>
 
     <!-- Product Modal -->
     <dialog class="modal" id="product-modal">
-      <button class="modal-close" type="button" aria-label="Close product details">&times;</button>
+      <button class="modal-close" type="button" aria-label="Close product details"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
       <h2 id="modal-title">Product details</h2>
       <p id="modal-copy"></p>
       <a class="btn btn-primary" href="contact.html">Ask about this product</a>
@@ -203,7 +200,7 @@
             <p class="footer-brand">Nexora Technologies</p>
             <h3>Let's build what's next.</h3>
             <p>Digital products and technology services for businesses ready to move with purpose.</p>
-            <a href="mailto:hello@nexora.com" class="footer-link">hello@nexora.com <span aria-hidden="true">↗</span>
+            <a href="mailto:hello@nexora.com" class="footer-link">hello@nexora.com <span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span>
             </a>
           </div>
 
